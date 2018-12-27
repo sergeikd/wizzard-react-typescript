@@ -1,13 +1,13 @@
 {
-  "main.css": "/wizzard-react/static/css/main.7553a321.chunk.css",
-  "main.js": "/wizzard-react/static/js/main.d94ad3c8.chunk.js",
-  "main.js.map": "/wizzard-react/static/js/main.d94ad3c8.chunk.js.map",
-  "static/js/1.f5be8258.chunk.js": "/wizzard-react/static/js/1.f5be8258.chunk.js",
-  "static/js/1.f5be8258.chunk.js.map": "/wizzard-react/static/js/1.f5be8258.chunk.js.map",
-  "runtime~main.js": "/wizzard-react/static/js/runtime~main.9a653971.js",
-  "runtime~main.js.map": "/wizzard-react/static/js/runtime~main.9a653971.js.map",
-  "static/css/main.7553a321.chunk.css.map": "/wizzard-react/static/css/main.7553a321.chunk.css.map",
-  "index.html": "/wizzard-react/index.html",
-  "precache-manifest.48230195792156d5fba28ca260eb283d.js": "/wizzard-react/precache-manifest.48230195792156d5fba28ca260eb283d.js",
-  "service-worker.js": "/wizzard-react/service-worker.js"
+  "main.css": "/wizzard-react-typescript/static/css/main.7553a321.chunk.css",
+  "main.js": "/wizzard-react-typescript/static/js/main.075c267c.chunk.js",
+  "main.js.map": "/wizzard-react-typescript/static/js/main.075c267c.chunk.js.map",
+  "static/js/1.f5be8258.chunk.js": "/wizzard-react-typescript/static/js/1.f5be8258.chunk.js",
+  "static/js/1.f5be8258.chunk.js.map": "/wizzard-react-typescript/static/js/1.f5be8258.chunk.js.map",
+  "runtime~main.js": "/wizzard-react-typescript/static/js/runtime~main.50676f27.js",
+  "runtime~main.js.map": "/wizzard-react-typescript/static/js/runtime~main.50676f27.js.map",
+  "static/css/main.7553a321.chunk.css.map": "/wizzard-react-typescript/static/css/main.7553a321.chunk.css.map",
+  "index.html": "/wizzard-react-typescript/index.html",
+  "precache-manifest.4afa0f785d3ec07a122030b27cb0613b.js": "/wizzard-react-typescript/precache-manifest.4afa0f785d3ec07a122030b27cb0613b.js",
+  "service-worker.js": "/wizzard-react-typescript/service-worker.js"
 }

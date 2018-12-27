@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/wizzard-react/precache-manifest.48230195792156d5fba28ca260eb283d.js"
+  "/wizzard-react-typescript/precache-manifest.4afa0f785d3ec07a122030b27cb0613b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/wizzard-react/index.html", {
+workbox.routing.registerNavigationRoute("/wizzard-react-typescript/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
