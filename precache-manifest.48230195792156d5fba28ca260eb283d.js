@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/wizzard-react/static/js/runtime~main.9a653971.js"
   },
   {
-    "revision": "4ceac70c9bdfd2570285",
-    "url": "/wizzard-react/static/js/main.4ceac70c.chunk.js"
+    "revision": "d94ad3c8dc6c569a670f",
+    "url": "/wizzard-react/static/js/main.d94ad3c8.chunk.js"
   },
   {
     "revision": "f5be82589ff580063075",
     "url": "/wizzard-react/static/js/1.f5be8258.chunk.js"
   },
   {
-    "revision": "4ceac70c9bdfd2570285",
-    "url": "/wizzard-react/static/css/main.a8001c51.chunk.css"
+    "revision": "d94ad3c8dc6c569a670f",
+    "url": "/wizzard-react/static/css/main.7553a321.chunk.css"
   },
   {
-    "revision": "bc0edd96aa5b26f91badb58177e7acd2",
+    "revision": "c519fbaf391d6df56a4c0b99110776ca",
     "url": "/wizzard-react/index.html"
   }
 ];
