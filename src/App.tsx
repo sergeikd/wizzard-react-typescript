@@ -27,6 +27,10 @@ interface ICars {
   gear: IEntity[];
 }
 
+interface IIndexedObject {
+  [s: string]: IEntity[];
+}
+
 class App extends Component<{}, IAppState> {
   constructor(props: {}) {
     super(props);
@@ -36,7 +40,9 @@ class App extends Component<{}, IAppState> {
       summary: [],
     };
   }
-  cars: ICars = { ...cars };
+
+  cars: IIndexedObject = { ...cars };
+  // cars: any = { ...cars };
   pages: IPages[] = pages;
 
   public componentDidMount(): void {
@@ -74,14 +80,15 @@ class App extends Component<{}, IAppState> {
       case 1:
         return this.cars.model.filter(x => x.brandId === this.state.summary[0]);
       case 2:
-        return this.cars.engine.filter(x => this.cars.model[x.id].availableEngineIds.includes(x.id));
+        return this.cars.engine.filter(x => this.cars.model[x.id].availableEngineIds!.includes(x.id));
       case 3:
-        return this.cars.gear.filter(x => this.cars.model[x.id].availableGearsIds.includes(x.id));
+        return this.cars.gear.filter(x => this.cars.model[x.id].availableGearsIds!.includes(x.id));
       case 4:
         return this.state.summary.map((item, index) => {
+          const entityName: string = pages[index].entity;
           return {
             id: index,
-            name: `${pages[index].entity}: ${cars[pages[index].entity][this.state.summary[index] - 1].name}`
+            name: `${entityName}: ${this.cars[entityName][this.state.summary[index] - 1].name}`
           };
         });
       default:
