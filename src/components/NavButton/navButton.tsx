@@ -5,11 +5,11 @@ interface INavButtonProps {
     maxPages: number;
     summary: number[];
     name: string;
-    onClickTo: (event: MouseEvent<HTMLButtonElement>) => void;
+    buttonClickHandler: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const NavButton: (props: INavButtonProps) => JSX.Element = (props) => {
-    const { pageId, maxPages, summary, onClickTo, name } = props;
+    const { pageId, maxPages, summary, buttonClickHandler, name } = props;
     const isDisabled: boolean = name === "Back"
         ? pageId <= 0
         : pageId >= maxPages || summary[pageId] === undefined;
@@ -18,7 +18,7 @@ export const NavButton: (props: INavButtonProps) => JSX.Element = (props) => {
         <button
             className={isDisabled ? "disabled" : "enabled clickable"}
             disabled={isDisabled}
-            onClick={onClickTo}>
+            onClick={buttonClickHandler}>
             {name}
         </button>
     );

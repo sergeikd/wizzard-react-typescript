@@ -27,10 +27,6 @@ interface ICars {
   gear: IEntity[];
 }
 
-interface IIndexedObject {
-  [s: string]: IEntity[];
-}
-
 class App extends Component<{}, IAppState> {
   constructor(props: {}) {
     super(props);
@@ -41,8 +37,7 @@ class App extends Component<{}, IAppState> {
     };
   }
 
-  cars: IIndexedObject = { ...cars };
-  // cars: any = { ...cars };
+  cars: ICars = { ...cars };
   pages: IPages[] = pages;
 
   public componentDidMount(): void {
@@ -104,13 +99,13 @@ class App extends Component<{}, IAppState> {
             pageId={this.state.pageId}
             maxPages={this.pages.length}
             summary={this.state.summary}
-            onClickTo={this.onClickBack}
+            buttonClickHandler={this.onClickBack}
             name="Back" />
           <NavButton
             pageId={this.state.pageId}
             maxPages={this.pages.length}
             summary={this.state.summary}
-            onClickTo={this.onClickFwd}
+            buttonClickHandler={this.onClickFwd}
             name="Forward" />
         </div>
         <Content
